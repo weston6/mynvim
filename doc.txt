@@ -1,0 +1,134 @@
+neovim
+---------
+                                                         
+       ▓▓▓▓▓▓ ▓▓▓▓▓▓   ▓▓▓▓▓   ▓▓▓  ▓▓▓ ▓▓▓▓▓  ▓▓▓▓ ▓▓▓▓    
+       ▓▓▓▓▓▓ ▓▓      ▓▓   ▓▓  ▓▓    ▓▓  ▓▓▓  ▓▓▓ ▓▓▓ ▓▓▓   
+       ▓▓  ▓▓ ▓▓     ▓▓▓   ▓▓▓ ▓▓▓  ▓▓▓  ▓▓▓  ▓▓  ▓▓▓  ▓▓   
+       ▓▓  ▓▓ ▓▓     ▓▓     ▓▓  ▓▓▓▓▓▓   ▓▓▓  ▓▓  ▓▓▓  ▓▓   
+       ▓▓  ▓▓ ▓▓▓▓▓▓ ▓▓  ♥  ▓▓   ▓▓▓▓    ▓▓▓  ▓▓  ▓▓▓  ▓▓   
+       ▓▓  ▓▓ ▓▓     ▓▓     ▓▓   ▓▓▓▓    ▓▓▓  ▓▓  ▓▓▓  ▓▓   
+       ▓▓  ▓▓ ▓▓     ▓▓▓   ▓▓▓   ▓▓▓▓    ▓▓▓  ▓▓  ▓▓▓  ▓▓   
+       ▓▓  ▓▓ ▓▓      ▓▓   ▓▓    ▓▓▓▓    ▓▓▓  ▓▓  ▓▓▓  ▓▓   
+       ▓▓  ▓▓ ▓▓▓▓▓▓   ▓▓▓▓▓      ▓▓    ▓▓▓▓▓ ▓▓  ▓▓▓  ▓▓   
+                                                                
+---------
+
+## lsp server install 
+
+    - clangd
+    - ts-language-server
+    - pylsp
+        pip install python-language-server
+            . mypy 静态类型检查器
+    - golsp
+    - lua_ls
+    - rust
+    "https://rust-analyzer.github.io/manual.html#rust-analyzer-language-server-binary"
+    下载后放入 "~/.local/bin/" ,然后 "chmod +x rust-analyzer"
+
+## (1)Keyboard shortcuts 
+    
+    - leader
+        .
+    
+    - 分屏
+        <space>v - :vs
+        <space>s - :sp
+
+    - 保存
+        <C-s> - :w
+
+    - 退出
+        <C-q> - :q
+
+    
+    - 窗口切换
+
+                       (j)
+
+                        | 
+                        |   
+            (h) --------|-------- (l)
+                        |
+                        |
+
+                       (k)
+        
+        
+    
+        <space>h <space>j  <space>k <space>l
+
+
+    - 窗口大小更改
+        <C-Up> - :resize -2
+        <C-Down> - :resize +2
+        <C-Left> - :vertical resize -2
+        <C-Right> - :vertical resize +2
+
+
+    - telescope [https://github.com/nvim-telescope/telescope.nvim]
+        <space>ff - find_files
+        <space>fg - live_grep
+        <space>fb - buffers
+        <space>fh - help_tags
+        <space>fc - colorscheme
+        <space>fm - keymaps
+        <space>fp - man_pages
+
+    - packer
+        <leader>i - :PackerInstall
+        <leader>c - :PackerClean
+        <leader>u - :PackerUpdate
+        <leader>s - :PackerSync
+
+    - comment
+        <leader>gcc
+        <leader>gcu
+
+    - LSP
+        map('n', 'gd', vim.lsp.buf.definition, opts)
+        map('n', 'gD', vim.lsp.buf.declaration, opts)
+
+## (2)Packer Plugin Command
+
+
+    You must run this or `PackerSync` whenever you make changes to your plugin configuration
+    Regenerate compiled loader file
+    
+        :PackerCompile
+
+    Remove any disabled or unused plugins
+        
+        :PackerClean
+
+    Clean, then install missing plugins
+        :PackerInstall
+
+    Clean, then update and install plugins
+    supports the `--preview` flag as an optional first argument to preview updates
+        :PackerUpdate
+
+    Perform `PackerUpdate` and then `PackerCompile`
+    supports the `--preview` flag as an optional first argument to preview updates
+        :PackerSync
+
+    Show list of installed plugins
+        :PackerStatus
+
+    Loads opt plugin immediately
+        :PackerLoad completion-nvim ale
+
+
+
+## (3)nvim-treesitter command
+
+    > code highlighting
+
+    :TSInstall <language_to_install> " install luanguage
+    :TSUpdate
+    :TSBufEnable {module} " enable module on current buffer
+    :TSBufDisable {module} " disable module on current buffer
+    :TSEnable {module} [{ft}] " enable module on every buffer. If filetype is specified, enable only for this filetype.
+    :TSDisable {module} [{ft}] " disable module on every buffer. If filetype is specified, disable only for this filetype.
+    :TSModuleInfo [{module}] " list information about modules state for each filetype
+
