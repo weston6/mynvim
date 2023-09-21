@@ -17,12 +17,12 @@ require("catppuccin").setup({
     no_underline = false, -- Force no underline
     styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
         comments = { "italic" }, -- Change the style of comments
-        conditionals = { "italic" },
+        conditionals = {},
         loops = {},
-        functions = {"italic"},
+        functions = {},
         keywords = {},
         strings = {},
-        variables = {"italic"},
+        variables = {},
         numbers = {},
         booleans = {},
         properties = {},
