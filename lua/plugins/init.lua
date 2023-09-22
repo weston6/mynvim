@@ -190,8 +190,7 @@ require("lazy").setup({
     require("plugins.config.tools.which-key")
   end
 },
-{'VonHeikemen/fine-cmdline.nvim'},
-{'MunifTanjim/nui.nvim'},
+
 {'nvim-lua/plenary.nvim'},
 
 --------themes---------------

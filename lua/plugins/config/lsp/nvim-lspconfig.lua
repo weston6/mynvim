@@ -16,7 +16,7 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 local on_attach = function(client, bufnr)
   client.server_capabilities.documentFormattingProvider = true
   client.server_capabilities.documentRangeFormattingProvider = true
-  client.server_capabilities.semanticTokensProvider = nil
+  --  client.server_capabilities.semanticTokensProvider = nil
 end
 
 

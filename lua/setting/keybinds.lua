@@ -67,8 +67,6 @@ map('n', '<space>fm', "<cmd>lua require('telescope.builtin').keymaps()<CR>", opt
 -- map('n', '<space>fd', "<cmd>require('telescope.builtin').commands<CR>", opts)
 map('n', '<space>fj', "<cmd>lua require('telescope.builtin').jumplist()<CR>", opts)
 
--- cmdline
-map('n', ':', '<cmd>FineCmdline<CR>',opts)
 
 -- lazy
 map("n", "<leader>i", ":Lazy<CR>", opts)

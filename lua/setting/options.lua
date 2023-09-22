@@ -2,7 +2,8 @@
 -------[configuration]---------
 
 local Setting = {
---"界面设置"
+    modifiable = true,
+    --"界面设置"
     mouse = "a", -- 鼠标支持
     number = true, --行号
    -- relativenumber = true, --设置相对行号
