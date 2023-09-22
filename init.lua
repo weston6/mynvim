@@ -24,5 +24,5 @@ end
 load("plugins")
 load("setting")
 load("module")
-load("themes.catppuccin")
+load("themes.oxocarbon")
 

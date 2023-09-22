@@ -31,6 +31,7 @@
   "onedark.nvim": { "branch": "master", "commit": "dac8c39812dae025255c9069a260e1f69d967927" },
   "org-bullets.nvim": { "branch": "main", "commit": "6e0d60e901bb939eb526139cb1f8d59065132fd9" },
   "orgmode": { "branch": "master", "commit": "ac5f48ce23e768e55de30adc968eaf955d393fc6" },
+  "oxocarbon.nvim": { "branch": "main", "commit": "162a92e2bcca588a01c2f9fd857bdb4dabd8d72c" },
   "plenary.nvim": { "branch": "master", "commit": "9ce85b0f7dcfe5358c0be937ad23e456907d410b" },
   "telescope.nvim": { "branch": "master", "commit": "40c8d2fc2b729dd442eda093cf8c9496d6e23732" },
   "toggleterm.nvim": { "branch": "main", "commit": "0427b908ebefcb3701c7f2cfbdafa37d11afe71a" },

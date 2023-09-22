@@ -121,7 +121,7 @@ require("lazy").setup({
   "nvim-tree/nvim-web-devicons",
 
   config = function ()
-    require("plugins.config.ui.nvim-web-devicons")
+    require("plugins.config.ui.web-devicons")
   end
 },
 
@@ -202,6 +202,6 @@ require("lazy").setup({
 {"ellisonleao/gruvbox.nvim"},
 { 'projekt0n/caret.nvim' },
 {'navarasu/onedark.nvim'},
-
+{"nyoom-engineering/oxocarbon.nvim"},
 
 })
