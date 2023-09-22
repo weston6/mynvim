@@ -81,7 +81,7 @@ cmp.setup({
     },
 
     formatting = {
-        fields = {"abbr", "kind" , "menu" },
+        fields = {"kind", "abbr",  "menu" },
         format = function(_, vim_item)
                     vim_item.kind = (kind_icon[vim_item.kind] or '') .."  " .. vim_item.kind
                     return vim_item
